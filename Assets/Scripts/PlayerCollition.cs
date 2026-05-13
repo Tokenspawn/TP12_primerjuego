@@ -4,20 +4,11 @@ using UnityEngine;
 
 public class PlayerCollition : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.CompareTag("Caja"))
         {
+            GameOver.gameOver = true;
             Destroy(gameObject);
         }
     }

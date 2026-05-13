@@ -10,7 +10,11 @@ public class TimerUI : MonoBehaviour
 
     void Update()
     {
-        tiempoTranscurrido += Time.deltaTime;
-        txtTiempo.text = tiempoTranscurrido.ToString("F2");
+        if(GameOver.gameOver == false)
+        {
+            tiempoTranscurrido += Time.deltaTime;
+            int segundos = Mathf.FloorToInt(tiempoTranscurrido) + 1;
+            txtTiempo.text = segundos.ToString("00");
+        }
     }
 }

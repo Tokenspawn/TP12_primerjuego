@@ -8,6 +8,9 @@ public class CajaMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(0, -speed * Time.deltaTime, 0);
+        if(GameOver.gameOver == false)
+        {
+            transform.Translate(0, -speed * Time.deltaTime, 0);
+        }
     }
 }

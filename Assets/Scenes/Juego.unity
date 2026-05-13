@@ -124,13 +124,12 @@ GameObject:
   - component: {fileID: 100461391}
   - component: {fileID: 100461390}
   - component: {fileID: 100461389}
+  - component: {fileID: 100461394}
   - component: {fileID: 100461388}
   - component: {fileID: 100461393}
-  - component: {fileID: 100461394}
-  - component: {fileID: 100461395}
   m_Layer: 0
   m_Name: EnemyBox
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.2
-  floorYValue: 0
+  floorYValue: 0.05
 --- !u!65 &100461389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -215,7 +214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100461387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.36, z: -3.108}
+  m_LocalPosition: {x: 0, y: 1.88, z: -2.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -235,7 +234,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &100461394
 MonoBehaviour:
@@ -250,18 +249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startYValue: 10
---- !u!114 &100461395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100461387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7f9175c8f036814dbfeed5bfe3d12b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +479,7 @@ GameObject:
   - component: {fileID: 1997784281}
   - component: {fileID: 1997784280}
   - component: {fileID: 1997784279}
+  - component: {fileID: 1997784284}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -583,6 +571,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1997784284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997784278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dccc51c16cc867f45a8be68c44ed68d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2052170579
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,9 +595,10 @@ GameObject:
   - component: {fileID: 2052170582}
   - component: {fileID: 2052170581}
   - component: {fileID: 2052170580}
+  - component: {fileID: 2052170584}
   m_Layer: 0
   m_Name: Piso
-  m_TagString: Caja
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -675,3 +676,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2052170584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052170579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f9175c8f036814dbfeed5bfe3d12b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

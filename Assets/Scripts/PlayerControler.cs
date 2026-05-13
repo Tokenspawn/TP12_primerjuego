@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
 {
-    public
-
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
@@ -22,20 +18,13 @@ public class PlayerControler : MonoBehaviour
                 transform.Translate(-2, 0, 0);
             }
         }
+
         if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             if(transform.position.x < 2)
             {
                 transform.Translate(2, 0, 0);
             }
-        }
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if(col.gameObject.CompareTag("Caja"))
-        {
-            Destroy(gameObject);
         }
     }
 }
